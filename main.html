@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" /><!-- This loads Puzzel’s default light-colored stylesheet -->
+	<link href="https://chat.puzzel.com/Content/Client/css/intelecom-light.css" rel="stylesheet" type="text/css" /><!-- This loads Puzzel’s default dark-colored stylesheet --><!-- link rel="stylesheet" href="https://chat.puzzel.com/Content/Client/css/intelecom-gray.css" type="text/css" /--><!-- This loads jQuery if you don’t already have it installed --><!--[if gte IE 9]><!--><script src="https://chat.puzzel.com/Content/Client/js/jquery-latest.min.js"></script><!--<![endif]--><!-- This loads jQuery for IE lower than 9 if you don’t already have it --><!--[if lt IE 9]>
+	   <script src="https://chat.puzzel.com/Content/Client/js/jquery-1.11.2.min.js"></script>
+	<![endif]--><!-- This loads Puzzel’s third party libraries --><script src="https://chat.puzzel.com/Content/Client/js/jquery-intelecomchat.libs.latest.min.js"></script><!-- This loads Puzzel’s chat code --><script src="https://chat.puzzel.com/Content/Client/js/jquery-intelecomchat.latest.min.js"></script><!-- Here you can change the colors in the 3 main color elements without using own css --><style>
+		.intelecomchatheader	{background-color:#002b45;} .intelecomchat__button{background:#002b45;}
+		.intelecomchatstarter	{border: 5px solid #002b45; width: 70px; height: 70px; }  
+	</style>
+</head>
+<body><!-- Here you can add a more traditional chat starter button. Remember to deactivate chat starter circle (show starter) to avoid duplicate chat starters --><!--form>
+	<button class="chatstarter" name="startChat">Start chat</button>
+</form-->
+<form><img class="chatstarter" name="startChat" src="https://newscollab.org/wp-content/uploads/2019/11/Chat-Icon.png" height="300px"/></form>
+DFDS IT Chat
+<div class="intelecomchat" id="someID"></div>
+<script>
+		$(document).ready(function() {
+			//intelecomChatintelecomtracker.add(window.location.href,"","");
+			$('#someID').intelecomChat({
+				/*
+				mandatory parameters
+				*/
+                customerKey: '11567',
+                configurationId: 'a8908fff-d97a-4e06-b295-60fd3c97a3a6',
+                });
+        });
+    </script></body>
+</html>
